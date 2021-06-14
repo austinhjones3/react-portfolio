@@ -10,7 +10,7 @@ h3 {
 }
 
 #toggle-hamburger {
-  background-color: #bf90bb;
+  background-color: var(--opera-mauve);
 }
 
 .nav-link {
