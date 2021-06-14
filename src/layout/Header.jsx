@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { palette } from "../palette";
-import "./Header.css";
+import "../styles/Header.css";
 import { FaReact } from "react-icons/fa";
 import {
   BsHouseDoorFill,
@@ -13,19 +13,23 @@ import {
 } from "react-icons/bs";
 
 export default function Header() {
-  const linkStyle = { color: palette.skyBlueCrayola, fontSize: "16px" };
+  const linkStyle = {
+    color: palette.skyBlueCrayola,
+    fontSize: "16px",
+    fontFamily: "Fira Mono",
+  };
   const logoStyle = { color: palette.skyBlueCrayola };
   const iconStyle = { fontSize: "24px", color: palette.hanBlue };
   return (
     <header>
-      <h1 className="d-flex justify-content-center mt-2">
+      <h1 className="d-flex justify-content-center mt-2 header-title">
         Austin{" "}
         <span style={logoStyle} className="ml-1 mr-1">
           <FaReact />
         </span>{" "}
         Jones
       </h1>
-      <h3 className="d-flex justify-content-center">Full-Stack Dev</h3>
+      <h3 className="d-flex justify-content-center header-title">Full-Stack Dev</h3>
       <div className="d-flex justify-content-center">
         <Navbar sticky variant="light" className="text-center" expand="md">
           <Container>

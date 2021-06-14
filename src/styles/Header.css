@@ -1,7 +1,5 @@
 @import url("../palette.css");
-
-h1,
-h3 {
+.header-title {
   color: var(--opera-mauve);
   font-family: "Fira Mono";
   font-weight: 700;
@@ -10,9 +8,7 @@ h3 {
 }
 
 #toggle-hamburger {
-  background-color: var(--opera-mauve);
+  background-color: var(--sky-blue-crayola);
 }
 
-.nav-link {
-  font-family: "Fira Mono";
-}
+/*# sourceMappingURL=Header.css.map */
