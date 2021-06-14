@@ -9,7 +9,7 @@ export default function Layout() {
   return (
     <Container>
       <BrowserRouter>
-        <main className="container">
+        <div className="container">
           <div>
             <Header />
           </div>
@@ -19,7 +19,7 @@ export default function Layout() {
           <div>
             <Footer />
           </div>
-        </main>
+        </div>
       </BrowserRouter>
     </Container>
   );

@@ -1,48 +1,61 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { palette } from "../palette";
 import "./Header.css";
 import { FaReact } from "react-icons/fa";
-// import { Navbar, Container, Nav } from "react-bootstrap";
+import {
+  BsHouseDoorFill,
+  BsFillEnvelopeFill,
+  BsNewspaper,
+  BsTerminalFill,
+  BsFillPersonLinesFill,
+} from "react-icons/bs";
+
 export default function Header() {
-  const linkStyle = { color: "#f0f0f0" };
-  const logoStyle = { color: "#42DDF5" };
+  const linkStyle = { color: palette.skyBlueCrayola, fontSize: "16px" };
+  const logoStyle = { color: palette.skyBlueCrayola };
+  const iconStyle = { fontSize: "24px", color: palette.hanBlue };
   return (
-    <>
-      <h2 className="d-flex justify-content-center">
+    <header>
+      <h1 className="d-flex justify-content-center mt-2">
         Austin{" "}
         <span style={logoStyle} className="ml-1 mr-1">
           <FaReact />
         </span>{" "}
         Jones
-      </h2>
-      <h4 className="d-flex justify-content-center">Full Stack Developer</h4>
+      </h1>
+      <h3 className="d-flex justify-content-center">Full-Stack Dev</h3>
       <div className="d-flex justify-content-center">
-        <Navbar className="text-center" expand="md">
+        <Navbar sticky variant="light" className="text-center" expand="md">
           <Container>
-            <Navbar.Toggle style={logoStyle} aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle
+              id="toggle-hamburger"
+              variant="light"
+              aria-controls="responsive-navbar-nav"
+            />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto text-center" pullRight>
+              <Nav className="me-auto text-center">
                 <Nav.Link as={Link} style={linkStyle} to="/" className="">
-                  Home
+                  <BsHouseDoorFill style={iconStyle} /> =&gt; Home
                 </Nav.Link>
                 <Nav.Link as={Link} style={linkStyle} to="/about" className="">
-                  About Me
+                  <BsFillPersonLinesFill style={iconStyle} /> =&gt; About Me
                 </Nav.Link>
                 <Nav.Link as={Link} style={linkStyle} to="/projects" className="">
-                  Projects
+                  <BsTerminalFill style={iconStyle} /> =&gt; Projects
                 </Nav.Link>
                 <Nav.Link as={Link} style={linkStyle} to="/resume" className="">
-                  Resume
+                  <BsNewspaper style={iconStyle} /> =&gt; Resume
                 </Nav.Link>
                 <Nav.Link as={Link} style={linkStyle} to="/contact" className="">
-                  Contact Me
+                  <BsFillEnvelopeFill style={iconStyle} /> =&gt; Contact Me
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </div>
-    </>
+    </header>
   );
 }
