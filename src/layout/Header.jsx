@@ -29,7 +29,9 @@ export default function Header() {
         </span>{" "}
         Jones
       </h1>
-      <h3 className="d-flex justify-content-center header-title">Full-Stack Dev</h3>
+      <h3 className="d-flex justify-content-center header-title">
+        Software Engineer
+      </h3>
       <div className="d-flex justify-content-center">
         <Navbar sticky variant="light" className="text-center" expand="md">
           <Container>
