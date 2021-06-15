@@ -23,8 +23,8 @@ export default function Home() {
         </div>
         <div align="center" className="mx-auto col-lg-7 col-12">
           <p className="pitch mt-3">
-            My name is Austin Jones, and I am a Full-Stack Developer. I strive to
-            translate my customer service experience into my development career.
+            From building REST API's, to React Single Page Applications, or general
+            JavaScript problems and programs, I'm the person for the job.
           </p>
         </div>
       </div>
