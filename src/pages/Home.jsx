@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Home.css";
-import { palette } from "../palette";
 import Skills from "./Skills";
 
 export default function Home() {

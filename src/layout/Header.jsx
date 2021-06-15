@@ -7,7 +7,6 @@ import { FaReact } from "react-icons/fa";
 import {
   BsHouseDoorFill,
   BsFillEnvelopeFill,
-  BsNewspaper,
   BsTerminalFill,
   BsFillPersonLinesFill,
 } from "react-icons/bs";
@@ -35,8 +34,8 @@ export default function Header() {
         Software Engineer
       </h3>
       <div className="d-flex justify-content-center">
-        <Navbar sticky variant="light" className="text-center" expand="md">
-          <Container>
+        <Navbar sticky variant="light" className="text-center " expand="md">
+          <Container className="d-flex justify-content-center">
             <Navbar.Toggle
               id="toggle-hamburger"
               variant="light"
@@ -48,16 +47,14 @@ export default function Header() {
                   <BsHouseDoorFill style={iconStyle} /> =&gt; Home
                 </Nav.Link>
                 <Nav.Link as={Link} style={linkStyle} to="/about" className="">
-                  <BsFillPersonLinesFill style={iconStyle} /> =&gt; About Me
+                  <BsFillPersonLinesFill style={iconStyle} /> =&gt; About
                 </Nav.Link>
                 <Nav.Link as={Link} style={linkStyle} to="/projects" className="">
                   <BsTerminalFill style={iconStyle} /> =&gt; Projects
                 </Nav.Link>
-                <Nav.Link as={Link} style={linkStyle} to="/resume" className="">
-                  <BsNewspaper style={iconStyle} /> =&gt; Resume
-                </Nav.Link>
+
                 <Nav.Link as={Link} style={linkStyle} to="/contact" className="">
-                  <BsFillEnvelopeFill style={iconStyle} /> =&gt; Contact Me
+                  <BsFillEnvelopeFill style={iconStyle} /> =&gt; Contact
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
