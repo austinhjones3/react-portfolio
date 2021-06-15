@@ -18,7 +18,9 @@ export default function Header() {
     fontSize: "16px",
     fontFamily: "Fira Mono",
   };
-  const logoStyle = { color: palette.skyBlueCrayola };
+  const logoStyle = {
+    color: palette.skyBlueCrayola,
+  };
   const iconStyle = { fontSize: "24px", color: palette.hanBlue };
   return (
     <header>
