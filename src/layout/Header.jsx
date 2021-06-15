@@ -23,7 +23,7 @@ export default function Header() {
   };
   const iconStyle = { fontSize: "24px", color: palette.hanBlue };
   return (
-    <header>
+    <header className="fixed-header">
       <h1 className="d-flex justify-content-center mt-2 header-title">
         Austin{" "}
         <span style={logoStyle} className="ml-1 mr-1">

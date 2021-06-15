@@ -10,13 +10,14 @@ export default function Layout() {
     <Container>
       <BrowserRouter>
         <div className="container">
-          <div>
+          <div className="header-container">
             <Header />
           </div>
           <div>
             <Routes />
           </div>
-          <div>
+          <div className="spacer"></div>
+          <div className="footer-container">
             <Footer />
           </div>
         </div>
