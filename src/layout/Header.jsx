@@ -26,7 +26,7 @@ export default function Header() {
       <h1 className="d-flex justify-content-center mt-2 header-title">
         Austin{" "}
         <span style={logoStyle} className="ml-1 mr-1">
-          <FaReact />
+          <FaReact className="App-logo" />
         </span>{" "}
         Jones
       </h1>

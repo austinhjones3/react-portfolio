@@ -3,13 +3,12 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 7s linear;
   }
 }
 
@@ -52,9 +51,8 @@ body {
 .fixed-footer {
   position: fixed;
   width: 100%;
-
   bottom: 0;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", "Open Sans" monospace;
 }
 
 .footer-container {
