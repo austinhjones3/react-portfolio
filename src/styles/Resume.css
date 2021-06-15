@@ -1,0 +1,16 @@
+@import url("../palette.css");
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+.resume-container img {
+  max-width: 800px;
+  border: solid 3px var(--rocket-metallic);
+}
+
+.download-resume {
+  background-color: var(--han-blue);
+  color: var(--cultured);
+}
+
+/*# sourceMappingURL=Resume.css.map */
