@@ -13,4 +13,10 @@
   color: var(--cultured);
 }
 
+@media (max-width: 550px) {
+  .resume-container img {
+    max-height: 700px;
+  }
+}
+
 /*# sourceMappingURL=Resume.css.map */

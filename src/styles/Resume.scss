@@ -14,3 +14,9 @@
   background-color: var(--han-blue);
   color: var(--cultured);
 }
+
+@media (max-width: 550px) {
+  .resume-container img {
+    max-height: 700px;
+  }
+}
