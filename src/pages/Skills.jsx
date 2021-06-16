@@ -8,7 +8,7 @@ import { palette } from "../palette";
 export default function Skills() {
   return (
     <>
-      <h5 className="skills-header mb-3">git checkout my-skills</h5>
+      <h5 className="skills-header mb-3">$ git checkout my-skills</h5>
       <div className="row skills-container">
         <ul className="col-6 skills">
           <li>

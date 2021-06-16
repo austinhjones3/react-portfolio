@@ -6,4 +6,5 @@ export const palette = {
   cultured: "#F0F0F0",
   richBlack: "#0F0F0F",
   skyBlueCrayola: "#42DDF5",
+  pastelPink: "#DF9D91",
 };

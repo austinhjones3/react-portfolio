@@ -39,11 +39,13 @@ export default function Header() {
   return (
     <header className="fixed-header">
       <h1 className="d-flex justify-content-center mt-2 header-title">
-        Austin{" "}
-        <span style={logoStyle} className="ml-1 mr-1">
-          <FaReact className="App-logo" />
-        </span>{" "}
-        Jones
+        <span className="row">
+          <span className="col-5">Austin </span>
+          <span style={logoStyle} className="col-2">
+            <FaReact className="App-logo" />
+          </span>{" "}
+          <span className="col-5">Jones</span>
+        </span>
       </h1>
       <h3 className="d-flex justify-content-center header-title">
         Software Engineer
