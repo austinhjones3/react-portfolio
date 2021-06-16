@@ -4,7 +4,7 @@ import { palette } from "../palette";
 export default function Footer() {
   return (
     <footer className="fixed-footer">
-      <span
+      <small
         style={{
           display: "flex",
           textAlign: "right",
@@ -13,8 +13,8 @@ export default function Footer() {
         }}
         className=".footer-content"
       >
-        v0.15 &#169;2021 Austin H. Jones Development
-      </span>
+        v0.15 &#169;2021 Austin Jones
+      </small>
     </footer>
   );
 }

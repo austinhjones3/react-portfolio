@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useContext } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { palette } from "../palette";
@@ -10,8 +11,22 @@ import {
   BsTerminalFill,
   BsFillPersonLinesFill,
 } from "react-icons/bs";
+import { MenuContext } from "./context";
+import useSideClick from "./useSideClick";
 
 export default function Header() {
+  const context = useContext(MenuContext);
+  const handleSideClick = useSideClick(context);
+
+  // when a click occurs on a button or link that should close the menu, close it
+  useEffect(handleClickSideEffect, [context.clickEvent]);
+  function handleClickSideEffect() {
+    if (context.menuIsOpen) {
+      document.getElementById("toggle-hamburger").click();
+      context.setMenuIsOpen(() => false);
+    }
+  }
+
   const linkStyle = {
     color: palette.skyBlueCrayola,
     fontSize: "16px",
@@ -37,23 +52,48 @@ export default function Header() {
         <Navbar sticky variant="light" className="text-center " expand="md">
           <Container className="d-flex justify-content-center">
             <Navbar.Toggle
+              onClick={() => context.setMenuIsOpen(() => !context.menuIsOpen)}
               id="toggle-hamburger"
               variant="light"
               aria-controls="responsive-navbar-nav"
             />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto text-center">
-                <Nav.Link as={Link} style={linkStyle} to="/" className="">
+                <Nav.Link
+                  as={Link}
+                  onClick={handleSideClick}
+                  style={linkStyle}
+                  to="/"
+                  className=""
+                >
                   <BsHouseDoorFill style={iconStyle} /> =&gt; Home
                 </Nav.Link>
-                <Nav.Link as={Link} style={linkStyle} to="/about" className="">
+                <Nav.Link
+                  as={Link}
+                  onClick={handleSideClick}
+                  style={linkStyle}
+                  to="/about"
+                  className=""
+                >
                   <BsFillPersonLinesFill style={iconStyle} /> =&gt; About
                 </Nav.Link>
-                <Nav.Link as={Link} style={linkStyle} to="/projects" className="">
+                <Nav.Link
+                  as={Link}
+                  onClick={handleSideClick}
+                  style={linkStyle}
+                  to="/projects"
+                  className=""
+                >
                   <BsTerminalFill style={iconStyle} /> =&gt; Projects
                 </Nav.Link>
 
-                <Nav.Link as={Link} style={linkStyle} to="/contact" className="">
+                <Nav.Link
+                  as={Link}
+                  onClick={handleSideClick}
+                  style={linkStyle}
+                  to="/contact"
+                  className=""
+                >
                   <BsFillEnvelopeFill style={iconStyle} /> =&gt; Contact
                 </Nav.Link>
               </Nav>
