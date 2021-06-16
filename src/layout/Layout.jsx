@@ -30,10 +30,9 @@ export default function Layout() {
             <div>
               <Routes />
             </div>
-            <div className="spacer"></div>
-            <div className="footer-container">
+            <Container className="footer-container">
               <Footer />
-            </div>
+            </Container>
           </div>
         </MenuContext.Provider>
       </BrowserRouter>

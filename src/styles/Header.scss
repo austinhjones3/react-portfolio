@@ -5,6 +5,11 @@
   font-family: "Fira Mono";
   font-weight: 700;
   -webkit-text-stroke: 0.7px var(--rich-black);
+  @media only screen and (max-width: 450px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
 }
 
 .header-container {
@@ -15,4 +20,10 @@
 
 #toggle-hamburger {
   background-color: var(--sky-blue-crayola);
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 35px;
+  }
 }

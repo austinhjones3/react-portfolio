@@ -40,10 +40,10 @@ export default function Header() {
     <header className="fixed-header">
       <h1 className="d-flex justify-content-center mt-2 header-title">
         <span className="row">
-          <span className="col-5">Austin </span>
+          <span className="col-5">Austin</span>
           <span style={logoStyle} className="col-2">
             <FaReact className="App-logo" />
-          </span>{" "}
+          </span>
           <span className="col-5">Jones</span>
         </span>
       </h1>

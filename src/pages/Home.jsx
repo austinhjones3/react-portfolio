@@ -9,7 +9,7 @@ export default function Home() {
       <div className="row">
         <div className="col-1 col-md-3"> </div>
         <div className="col-10 col-md-6">
-          <h3 className="home-greeting mt-4" align="center">
+          <h3 className="home-greeting mt-3" align="center">
             Greetings from the Code Offices of Austin Henry Jones!
             <br />
           </h3>
