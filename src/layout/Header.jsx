@@ -13,15 +13,15 @@ import {
 } from "react-icons/bs";
 import { MenuContext } from "./context";
 import useSideClick from "./useSideClick";
+import $ from "jquery";
 
 export default function Header() {
   const context = useContext(MenuContext);
   const handleSideClick = useSideClick(context);
-
   // when a click occurs on a button or link that should close the menu, close it
   useEffect(handleClickSideEffect, [context.clickEvent]);
   function handleClickSideEffect() {
-    if (context.menuIsOpen) {
+    if (context.menuIsOpen && $(window).width() < 768) {
       document.getElementById("toggle-hamburger").click();
       context.setMenuIsOpen(() => false);
     }

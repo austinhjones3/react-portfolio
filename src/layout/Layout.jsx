@@ -10,32 +10,27 @@ import { MenuContext } from "./context.js";
 
 export default function Layout() {
   const [clickEvent, setClickEvent, clickEventRef] = useState(false);
-  const [menuIsOpen, setMenuIsOpen, menuIsOpenRef] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   const context = {
     clickEvent,
     setClickEvent,
     clickEventRef,
     menuIsOpen,
     setMenuIsOpen,
-    menuIsOpenRef,
   };
   return (
-    <Container>
-      <BrowserRouter>
-        <MenuContext.Provider value={context}>
-          <div className="container">
-            <div className="header-container">
-              <Header />
-            </div>
-            <div>
-              <Routes />
-            </div>
-            <Container className="footer-container">
-              <Footer />
-            </Container>
+    <BrowserRouter>
+      <MenuContext.Provider value={context}>
+        <div className="container content">
+          <div className="header-container">
+            <Header />
           </div>
-        </MenuContext.Provider>
-      </BrowserRouter>
-    </Container>
+          <div>
+            <Routes />
+          </div>
+        </div>
+        <Footer />
+      </MenuContext.Provider>
+    </BrowserRouter>
   );
 }
