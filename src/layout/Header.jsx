@@ -52,9 +52,9 @@ export default function Header() {
   const phrases = [
     newPhrase("Austin Jones", 4000),
     newPhrase("Developer", 4000),
-    newPhrase("Programmer", 2000),
-    newPhrase("React Buff", 2000),
-    newPhrase("Techie", 1000),
+    newPhrase("Programmer", 2500),
+    newPhrase("React Buff", 2500),
+    newPhrase("Techie", 1200),
     newPhrase("Father", 500),
     newPhrase("Teacher", 500),
     newPhrase("Learner", 500),
