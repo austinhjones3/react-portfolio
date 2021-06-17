@@ -71,8 +71,11 @@ export default function Contact() {
           </Link>
           <DownloadResume margin="ml-3" />
         </div>
-        <ErrorAlert error={error} />
-        <h5>Fill out the form, or email me at austin@austinjones.io</h5>
+        {error ? (
+          <ErrorAlert error={error} />
+        ) : (
+          <h5>Fill out the form, or email me at austin@austinjones.io</h5>
+        )}
         <form onSubmit={handleButtonClick} className={formWidth()}>
           <div className="mb-1">
             <label htmlFor="name" className="form-label">
