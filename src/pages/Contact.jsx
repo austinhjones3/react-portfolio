@@ -10,7 +10,6 @@ import ErrorAlert from "../layout/ErrorAlert";
 import { GiCheckMark } from "react-icons/gi";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { palette } from "../styles/palette";
-import $ from "jquery";
 import DownloadResume from "./DownloadResume";
 
 export default function Contact() {
@@ -37,8 +36,6 @@ export default function Contact() {
     context.menuIsOpen && handleSideClick();
     event.target.nodeName === "FORM" ? sendResponse(event) : history.goBack();
   }
-
-  const formWidth = () => ($(window).width() < 768 ? "w-100" : "w-75");
 
   return state.succeeded ? (
     <div id="contact-success" className="mt-5">
@@ -76,7 +73,7 @@ export default function Contact() {
         ) : (
           <h5>Fill out the form, or email me at austin@austinjones.io</h5>
         )}
-        <form onSubmit={handleButtonClick} className={formWidth()}>
+        <form onSubmit={handleButtonClick} className="w-100" id="contact-form">
           <div className="mb-1">
             <label htmlFor="name" className="form-label">
               Name
