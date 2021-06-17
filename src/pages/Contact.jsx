@@ -9,8 +9,9 @@ import { useForm } from "@formspree/react";
 import ErrorAlert from "../layout/ErrorAlert";
 import { GiCheckMark } from "react-icons/gi";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { palette } from "../palette";
+import { palette } from "../styles/palette";
 import $ from "jquery";
+import DownloadResume from "./DownloadResume";
 
 export default function Contact() {
   const [state, sendResponse] = useForm("xleoyjpn");
@@ -50,10 +51,10 @@ export default function Contact() {
   ) : (
     <div className="contact">
       <center>
-        <h3 id="contact-header" className="mt-3">
+        <h3 id="contact-header" className="mt-2">
           Contact Me!
         </h3>
-        <div className="mt-1 mb-4">
+        <div className="mt-3 mb-2 row d-flex justify-content-center">
           <Link
             to={{ pathname: "https://linkedin.com/in/austinhjones3/" }}
             target="_blank"
@@ -64,10 +65,11 @@ export default function Contact() {
           <Link
             to={{ pathname: "https://github.com/austinhjones3" }}
             target="_blank"
-            className="ml-3"
+            className="mr-3"
           >
             <FaGithub style={{ fontSize: "50px", color: palette.cultured }} />
           </Link>
+          <DownloadResume margin="ml-3" />
         </div>
         <ErrorAlert error={error} />
         <h5>Fill out the form, or email me at austin@austinjones.io</h5>

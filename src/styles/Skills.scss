@@ -1,4 +1,4 @@
-@import url("../palette.css");
+@import url("./palette.css");
 
 .skills-header {
   font-family: "Fira Mono";
@@ -34,13 +34,12 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .skills {
-    li {
-      padding-left: 5%;
-    }
-  }
-}
+// @media only screen and (max-width: 500px) {
+//   .skills {
+//     li {
+//     }
+//   }
+// }
 
 @media only screen and (min-width: 992px) {
   .skills-container {

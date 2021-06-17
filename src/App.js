@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.css";
 import Layout from "./layout/Layout";
 
 export default function App() {

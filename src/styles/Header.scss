@@ -1,4 +1,4 @@
-@import url("../palette.css");
+@import url("./palette.css");
 
 #terminal-logo {
   color: var(--sky-blue-crayola);
@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 992px) {
   #header-title {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 

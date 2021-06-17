@@ -3,7 +3,7 @@ import "../styles/Skills.css";
 import { SiPostgresql, SiJavascript, SiCss3, SiSass } from "react-icons/si";
 import { FaReact, FaNodeJs, FaHtml5, FaGithub } from "react-icons/fa";
 import { ExpressIcon, KnexIcon } from "../images/SVG";
-import { palette } from "../palette";
+import { palette } from "../styles/palette";
 
 export default function Skills() {
   return (

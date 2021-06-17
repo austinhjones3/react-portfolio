@@ -2,7 +2,7 @@
 import React, { useEffect, useContext, useRef, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { palette } from "../palette";
+import { palette } from "../styles/palette";
 import "../styles/Header.css";
 import { FaTerminal } from "react-icons/fa";
 import {
@@ -64,8 +64,8 @@ export default function Header() {
         <FaTerminal className="mr-3" id="terminal-logo" />
         {typing && (
           <Typist onTypingDone={loop}>
-            {phrases.map(({ text, delay }) => (
-              <span>
+            {phrases.map(({ text, delay }, idx) => (
+              <span key={idx}>
                 {text}
                 <Typist.Backspace count={text.length} delay={delay} />
               </span>
