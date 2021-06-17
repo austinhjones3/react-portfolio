@@ -1,16 +1,15 @@
 @import url("../palette.css");
 
-.header-title {
+#terminal-logo {
+  color: var(--sky-blue-crayola);
+}
+
+#header-title {
   color: var(--opera-mauve);
   font-family: "Fira Mono";
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
   -webkit-text-stroke: 0.7px var(--rich-black);
-  @media only screen and (max-width: 450px) {
-    h1 {
-      font-size: 30px;
-    }
-  }
 }
 
 .header-container {
@@ -22,9 +21,22 @@
 #toggle-hamburger {
   background-color: var(--sky-blue-crayola);
 }
+.link-icon {
+  color: var(--han-blue);
+}
+.header-link {
+  font-size: 16px;
+  font-family: "Fira Mono", monospace;
+}
 
-@media only screen and (max-width: 450px) {
-  h1 {
+@media only screen and (max-width: 992px) {
+  #header-title {
     font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header-link {
+    font-size: 24px;
   }
 }

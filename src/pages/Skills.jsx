@@ -20,8 +20,12 @@ export default function Skills() {
             PostgreSQL
           </li>
           <li>
-            <ExpressIcon stroke={palette.cultured} fill={palette.cultured} />
-            <span className="ml-2 skill-logo">Express.js</span>
+            <ExpressIcon
+              className="skill-logo"
+              stroke={palette.cultured}
+              fill={palette.cultured}
+            />
+            <span className="ml-2">Express.js</span>
           </li>
           <li>
             <FaReact
@@ -37,7 +41,7 @@ export default function Skills() {
         </ul>
         <ul className="col-6 skills">
           <li>
-            <KnexIcon /> <span className="ml-2 skill-logo">Knex.js</span>
+            <KnexIcon className="skill-logo" /> <span className="ml-2">Knex.js</span>
           </li>
           <li>
             <FaHtml5 style={{ color: "#f56025" }} className="mr-2 skill-logo" />

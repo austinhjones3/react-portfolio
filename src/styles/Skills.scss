@@ -17,11 +17,13 @@
     font-size: 20px;
     list-style-type: none;
     display: flex;
+    vertical-align: bottom;
+    position: relative;
   }
 }
 
 .skill-logo {
-  vertical-align: bottom;
+  margin-top: 4.3%;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 991px) {
@@ -43,5 +45,19 @@
 @media only screen and (min-width: 992px) {
   .skills-container {
     margin-left: 90px;
+  }
+
+  .skills-header {
+    font-size: 30px;
+  }
+
+  .skills {
+    li {
+      font-size: 26px;
+    }
+  }
+
+  .skill-logo {
+    font-size: 20px;
   }
 }

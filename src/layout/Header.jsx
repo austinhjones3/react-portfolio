@@ -34,21 +34,11 @@ export default function Header() {
 
   const linkStyle = {
     color: palette.skyBlueCrayola,
-    fontSize: "16px",
-    fontFamily: "Fira Mono",
   };
-  const logoStyle = {
-    color: palette.skyBlueCrayola,
-  };
-  const iconStyle = { fontSize: "24px", color: palette.hanBlue };
-
-  function loop() {
-    setTyping(() => false);
-    setTyping(() => true);
-  }
 
   const newPhrase = (text, delay) => ({ text, delay });
 
+  // phrases and their delays before backspace to be typed in header
   const phrases = [
     newPhrase("Austin Jones", 4000),
     newPhrase("Developer", 4000),
@@ -62,10 +52,16 @@ export default function Header() {
     newPhrase("Friend", 500),
   ];
 
+  // when the phrases are finished mapping, change state to rerender and loop
+  function loop() {
+    setTyping(() => false);
+    setTyping(() => true);
+  }
+
   return (
     <header className="fixed-header">
-      <h1 className="d-flex justify-content-center mt-2 header-title">
-        <FaTerminal style={logoStyle} className="mr-3" />
+      <h1 className="d-flex justify-content-center mt-2" id="header-title">
+        <FaTerminal className="mr-3" id="terminal-logo" />
         {typing && (
           <Typist onTypingDone={loop}>
             {phrases.map(({ text, delay }) => (
@@ -95,27 +91,27 @@ export default function Header() {
                   onClick={handleSideClick}
                   style={linkStyle}
                   to="/"
-                  className=""
+                  className="header-link"
                 >
-                  <BsHouseDoorFill style={iconStyle} /> =&gt; Home
+                  <BsHouseDoorFill className="link-icon" /> =&gt; Home
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
                   onClick={handleSideClick}
                   style={linkStyle}
                   to="/about"
-                  className=""
+                  className="header-link"
                 >
-                  <BsFillPersonLinesFill style={iconStyle} /> =&gt; About
+                  <BsFillPersonLinesFill className="link-icon" /> =&gt; About
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
                   onClick={handleSideClick}
                   style={linkStyle}
                   to="/projects"
-                  className=""
+                  className="header-link"
                 >
-                  <BsTerminalFill style={iconStyle} /> =&gt; Projects
+                  <BsTerminalFill className="link-icon" /> =&gt; Projects
                 </Nav.Link>
 
                 <Nav.Link
@@ -123,9 +119,9 @@ export default function Header() {
                   onClick={handleSideClick}
                   style={linkStyle}
                   to="/contact"
-                  className=""
+                  className="header-link"
                 >
-                  <BsFillEnvelopeFill style={iconStyle} /> =&gt; Contact
+                  <BsFillEnvelopeFill className="link-icon" /> =&gt; Contact
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

@@ -5,6 +5,7 @@ export function ExpressIcon({ fill, stroke }) {
       viewBox="0 0 32 32"
       width="20"
       height="20"
+      className="skill-logo"
     >
       <path
         fill={fill}
@@ -24,6 +25,7 @@ export function KnexIcon() {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
+      className="skill-logo"
     >
       <g>
         <path

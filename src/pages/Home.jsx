@@ -9,7 +9,7 @@ export default function Home() {
       <div className="row">
         <div className="col-1 col-md-3"> </div>
         <div className="col-10 col-md-6">
-          <h3 className="home-greeting mt-3" align="center">
+          <h3 className="mt-3" id="home-greeting" align="center">
             Greetings from the Code Offices of Austin Henry Jones!
             <br />
           </h3>
@@ -21,7 +21,7 @@ export default function Home() {
           <Skills />
         </div>
         <div align="center" className="mx-auto col-12">
-          <p className="home-pitch mt-3">
+          <p className="mt-3" id="home-pitch">
             From building REST API's, to React Single Page Applications, or managing
             a SQL database, I'm the person for the job.
           </p>
