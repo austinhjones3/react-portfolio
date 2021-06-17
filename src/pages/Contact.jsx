@@ -19,22 +19,22 @@ export default function Contact() {
   const context = useContext(MenuContext);
   const handleSideClick = useSideClick(context);
 
-  useEffect(redirect, [state.succeeded, state.errors]);
-  function redirect() {
+  useEffect(processRequest, [state.succeeded, state.errors]);
+  function processRequest() {
     if (state.succeeded) {
       const timer = setTimeout(() => {
         history.push("/");
-      }, 3000);
+      }, 3500);
       return () => clearTimeout(timer);
     } else if (state.errors.length) {
       setError(() => new Error(state.errors[0].message));
     }
   }
 
-  function handleSubmit(event) {
+  function handleButtonClick(event) {
     setError(() => null);
     context.menuIsOpen && handleSideClick();
-    sendResponse(event);
+    event.target.nodeName === "FORM" ? sendResponse(event) : history.goBack();
   }
 
   const formWidth = () => ($(window).width() < 768 ? "w-100" : "w-75");
@@ -71,7 +71,7 @@ export default function Contact() {
         </div>
         <ErrorAlert error={error} />
         <h5>Fill out the form, or email me at austin@austinjones.io</h5>
-        <form onSubmit={handleSubmit} className={formWidth()}>
+        <form onSubmit={handleButtonClick} className={formWidth()}>
           <div className="mb-1">
             <label htmlFor="name" className="form-label">
               Name
@@ -113,7 +113,7 @@ export default function Contact() {
           </button>
           <button
             className="btn ml-2 contact-cancel"
-            onClick={() => history.push("/")}
+            onClick={handleButtonClick}
             type="button"
           >
             Cancel

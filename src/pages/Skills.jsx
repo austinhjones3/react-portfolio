@@ -26,7 +26,7 @@ export default function Skills() {
           <li>
             <FaReact
               style={{ color: palette.skyBlueCrayola }}
-              className="mr-2 skill-logo"
+              className="mr-2 skill-logo App-logo"
             />{" "}
             React.js
           </li>

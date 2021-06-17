@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useContext, useRef } from "react";
+import React, { useEffect, useContext, useRef, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { palette } from "../palette";
 import "../styles/Header.css";
-import { FaReact } from "react-icons/fa";
+import { FaTerminal } from "react-icons/fa";
 import {
   BsHouseDoorFill,
   BsFillEnvelopeFill,
@@ -14,13 +14,15 @@ import {
 import { MenuContext } from "./context";
 import useSideClick from "./useSideClick";
 import $ from "jquery";
+import Typist from "react-typist";
+import "react-typist/dist/Typist.css";
 
 export default function Header() {
   const context = useContext(MenuContext);
   const handleSideClick = useSideClick(context);
   const toggleHamburger = useRef();
-  // const focusOnToggle = () => toggleHamburger.current.focus();
-  // useEffect(focusOnToggle, []);
+  const [typing, setTyping] = useState(true);
+
   // when a click occurs on a button or link that should close the menu, close it
   useEffect(handleClickSideEffect, [context.clickEvent]);
   function handleClickSideEffect() {
@@ -39,20 +41,45 @@ export default function Header() {
     color: palette.skyBlueCrayola,
   };
   const iconStyle = { fontSize: "24px", color: palette.hanBlue };
+
+  function loop() {
+    setTyping(() => false);
+    setTyping(() => true);
+  }
+
+  function generatePhrase(text, delay) {
+    return { text, delay };
+  }
+
+  const phrases = [
+    generatePhrase("Austin Jones", 4000),
+    generatePhrase("Developer", 4000),
+    generatePhrase("Programmer", 2000),
+    generatePhrase("React Buff", 2000),
+    generatePhrase("Techie", 1000),
+    generatePhrase("Father", 500),
+    generatePhrase("Teacher", 500),
+    generatePhrase("Learner", 500),
+    generatePhrase("Gamer", 500),
+    generatePhrase("Friend", 500),
+  ];
+
   return (
     <header className="fixed-header">
       <h1 className="d-flex justify-content-center mt-2 header-title">
-        <span className="row">
-          <span className="col-5">Austin</span>
-          <span style={logoStyle} className="col-2">
-            <FaReact className="App-logo" />
-          </span>
-          <span className="col-5">Jones</span>
-        </span>
+        <FaTerminal style={logoStyle} className="mr-3" />
+        {typing && (
+          <Typist onTypingDone={loop}>
+            {phrases.map(({ text, delay }) => (
+              <span>
+                {text}
+                <Typist.Backspace count={text.length} delay={delay} />
+              </span>
+            ))}
+          </Typist>
+        )}
       </h1>
-      <h3 className="d-flex justify-content-center header-title">
-        Software Engineer
-      </h3>
+
       <div className="d-flex justify-content-center">
         <Navbar sticky variant="light" className="text-center " expand="md">
           <Container className="d-flex justify-content-center">
