@@ -10,6 +10,7 @@ import ErrorAlert from "../layout/ErrorAlert";
 import { GiCheckMark } from "react-icons/gi";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { palette } from "../palette";
+import $ from "jquery";
 
 export default function Contact() {
   const [state, sendResponse] = useForm("xleoyjpn");
@@ -35,6 +36,8 @@ export default function Contact() {
     context.menuIsOpen && handleSideClick();
     sendResponse(event);
   }
+
+  const formWidth = () => ($(window).width() < 768 ? "w-100" : "w-75");
 
   return state.succeeded ? (
     <div id="contact-success" className="mt-5">
@@ -68,8 +71,8 @@ export default function Contact() {
         </div>
         <ErrorAlert error={error} />
         <h5>Fill out the form, or email me at austin@austinjones.io</h5>
-        <form onSubmit={handleSubmit} className="w-75">
-          <div className="mb-3">
+        <form onSubmit={handleSubmit} className={formWidth()}>
+          <div className="mb-1">
             <label htmlFor="name" className="form-label">
               Name
             </label>
@@ -81,7 +84,7 @@ export default function Contact() {
               placeholder="Jane Appleseed"
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-1">
             <label htmlFor="email" className="form-label">
               Email address
             </label>
