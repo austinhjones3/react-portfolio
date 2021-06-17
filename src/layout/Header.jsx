@@ -47,21 +47,19 @@ export default function Header() {
     setTyping(() => true);
   }
 
-  function generatePhrase(text, delay) {
-    return { text, delay };
-  }
+  const newPhrase = (text, delay) => ({ text, delay });
 
   const phrases = [
-    generatePhrase("Austin Jones", 4000),
-    generatePhrase("Developer", 4000),
-    generatePhrase("Programmer", 2000),
-    generatePhrase("React Buff", 2000),
-    generatePhrase("Techie", 1000),
-    generatePhrase("Father", 500),
-    generatePhrase("Teacher", 500),
-    generatePhrase("Learner", 500),
-    generatePhrase("Gamer", 500),
-    generatePhrase("Friend", 500),
+    newPhrase("Austin Jones", 4000),
+    newPhrase("Developer", 4000),
+    newPhrase("Programmer", 2000),
+    newPhrase("React Buff", 2000),
+    newPhrase("Techie", 1000),
+    newPhrase("Father", 500),
+    newPhrase("Teacher", 500),
+    newPhrase("Learner", 500),
+    newPhrase("Gamer", 500),
+    newPhrase("Friend", 500),
   ];
 
   return (
