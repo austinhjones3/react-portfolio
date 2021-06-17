@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useRef } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { palette } from "../palette";
@@ -18,11 +18,14 @@ import $ from "jquery";
 export default function Header() {
   const context = useContext(MenuContext);
   const handleSideClick = useSideClick(context);
+  const toggleHamburger = useRef();
+  // const focusOnToggle = () => toggleHamburger.current.focus();
+  // useEffect(focusOnToggle, []);
   // when a click occurs on a button or link that should close the menu, close it
   useEffect(handleClickSideEffect, [context.clickEvent]);
   function handleClickSideEffect() {
     if (context.menuIsOpen && $(window).width() < 768) {
-      document.getElementById("toggle-hamburger").click();
+      toggleHamburger.current.click();
       context.setMenuIsOpen(() => false);
     }
   }
@@ -56,6 +59,7 @@ export default function Header() {
             <Navbar.Toggle
               onClick={() => context.setMenuIsOpen(() => !context.menuIsOpen)}
               id="toggle-hamburger"
+              ref={toggleHamburger}
               variant="light"
               aria-controls="responsive-navbar-nav"
             />

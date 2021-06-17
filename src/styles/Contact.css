@@ -15,4 +15,12 @@
   font-family: "Raleway";
 }
 
+#contact-success {
+  text-align: center;
+}
+
+#check {
+  color: greenyellow;
+}
+
 /*# sourceMappingURL=Contact.css.map */
