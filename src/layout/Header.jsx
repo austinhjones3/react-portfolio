@@ -11,8 +11,8 @@ import {
   BsTerminalFill,
   BsFillPersonLinesFill,
 } from "react-icons/bs";
-import { MenuContext } from "./context";
-import useSideClick from "./useSideClick";
+import { MenuContext } from "../util/context";
+import useSideClick from "../util/useSideClick";
 import $ from "jquery";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";

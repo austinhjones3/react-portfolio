@@ -3,14 +3,14 @@ import React, { useContext, useEffect, useState } from "react";
 import "../styles/Contact.css";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import useSideClick from "../layout/useSideClick";
-import { MenuContext } from "../layout/context";
+import useSideClick from "../util/useSideClick";
+import { MenuContext } from "../util/context";
 import { useForm } from "@formspree/react";
 import ErrorAlert from "../layout/ErrorAlert";
 import { GiCheckMark } from "react-icons/gi";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { palette } from "../styles/palette";
-import DownloadResume from "./DownloadResume";
+import DownloadResume from "../components/DownloadResume";
 
 export default function Contact() {
   const [state, sendResponse] = useForm("xleoyjpn");

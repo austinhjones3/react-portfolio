@@ -1,0 +1,19 @@
+@import url("./palette.css");
+
+#about-header {
+  font-family: "Noto Sans";
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--cultured);
+}
+
+#portrait {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 350px;
+  border: 2px solid var(--han-blue);
+}

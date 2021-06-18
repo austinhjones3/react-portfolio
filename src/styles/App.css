@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 0;
 }
 
 .App-logo {
@@ -36,8 +37,6 @@ body {
   width: 100%;
   bottom: 0;
   font-family: "Noto Sans", "Open Sans", monospace;
-  /* display: flex;
-    justify-content: center; */
   text-align: center;
 }
 

@@ -1,21 +1,13 @@
 import React from "react";
 import "../styles/Home.css";
-import Skills from "./Skills";
+import "../styles/Skills.css";
+import Greeting from "../components/Greeting";
+import Skills from "../components/Skills";
 
 export default function Home() {
-  // write media query
   return (
     <>
-      <div className="row">
-        <div className="col-1 col-md-3"> </div>
-        <div className="col-10 col-md-6">
-          <h3 className="mt-3" id="home-greeting" align="center">
-            Greetings from the Code Offices of Austin Henry Jones!
-            <br />
-          </h3>
-        </div>
-        <div className="col-1 col-md-3"> </div>
-      </div>
+      <Greeting />
       <div className="row mt-3">
         <div align="center" className=" mx-auto ml-2 col-12">
           <Skills />

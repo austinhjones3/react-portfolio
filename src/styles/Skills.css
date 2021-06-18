@@ -1,6 +1,6 @@
 @import url("./palette.css");
 .skills-header {
-  font-family: "Fira Mono";
+  font-family: "Fira Mono", "Lucida Console";
   text-align: center;
   font-weight: 700;
   color: var(--pastel-pink);
