@@ -4,7 +4,8 @@
   margin-top: 10px;
   text-align: center;
   font-weight: 700;
-  color: var(--cultured);
+  color: var(--han-blue);
+  -webkit-text-stroke: 0.5px var(--sky-blue-crayola);
 }
 
 #portrait {
@@ -22,10 +23,30 @@
   justify-content: center;
 }
 
-.about-text {
+.intro-text {
   font-size: 16px;
   font-family: "raleway";
   text-align: center;
+}
+
+.about-text {
+  font-size: 14px;
+  font-family: "raleway";
+  text-align: center;
+}
+
+.section-header {
+  font-family: "Noto Sans";
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--han-blue);
+  -webkit-text-stroke: 0.5px var(--sky-blue-crayola);
+}
+
+.about-icon {
+  font-size: 50px;
+  color: var(--sky-blue-crayola);
 }
 
 @media only screen and (min-width: 992px) {
