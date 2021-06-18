@@ -25,6 +25,9 @@ body {
   background: linear-gradient(90deg, #020024 0%, #353454 50%, #353454 100%);
   color: #f0f0f0;
   font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .content {
@@ -33,11 +36,11 @@ body {
 }
 
 .footer-container {
-  position: fixed;
-  width: 100%;
+  position: relative;
   bottom: 0;
   font-family: "Noto Sans", "Open Sans", monospace;
   text-align: center;
+  margin-top: 20px;
 }
 
 .spacer {
