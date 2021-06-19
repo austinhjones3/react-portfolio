@@ -15,7 +15,7 @@ export default class SectionAboutMe extends Component {
         <div className=" d-flex justify-content-center">
           <this.props.icon className="about-icon" />
         </div>
-        <div className="text-container">
+        <div className="text-container mt-2">
           <span className="about-text">{this.props.answer}</span>
         </div>
       </>
