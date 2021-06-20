@@ -17,4 +17,12 @@
   color: purple;
 }
 
+@media only screen and (min-width: 992px) {
+  .card-body,
+.card-title,
+.list-group-item {
+    font-size: 1.2em;
+  }
+}
+
 /*# sourceMappingURL=Projects.css.map */

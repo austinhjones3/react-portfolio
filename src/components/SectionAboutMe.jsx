@@ -4,14 +4,14 @@ export default class SectionAboutMe extends Component {
   render() {
     return (
       <>
-        <span className="text-center">
+        <div className="text-center">
           <h4 className="section-header">{this.props.question}</h4>
-        </span>
+        </div>
         <div className=" d-flex justify-content-center">
           <this.props.icon className="about-icon" />
         </div>
         <div className="text-container mt-2">
-          <span className="about-text">{this.props.answer}</span>
+          <div className="about-text">{this.props.answer}</div>
         </div>
       </>
     );

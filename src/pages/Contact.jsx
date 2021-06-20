@@ -48,7 +48,7 @@ export default function Contact() {
   ) : (
     <div className="contact">
       <center>
-        <h3 id="contact-header" className="mt-2">
+        <h3 id="contact-header" className="section-header mt-2">
           Contact Me!
         </h3>
         <div className="mt-3 mb-2 row d-flex justify-content-center">

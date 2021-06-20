@@ -13,7 +13,7 @@ export default class AboutPortrait extends Component {
           <h6 className="mt-2 about-text">This is my face.</h6>
         </div>
         <div className="d-flex mb-1 justify-content-center">
-          <DownloadResume margin="" />
+          <DownloadResume />
         </div>
       </>
     );
