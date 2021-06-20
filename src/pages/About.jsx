@@ -16,7 +16,7 @@ export default function About() {
     ),
     makeQA(
       "What are my goals?",
-      "I plan on learning more and more constantly. In five years, I want to be five years better than I am today as a developer. In the short term, I want to learn as much about front-end JavaScript UI libraries as I possibly can. I am actively looking for a new challenge. A great, enriched company cultured is what I am really looking for from my next position. I am huge believer in collabortive, deeply-meshed, nurturing culture that empowers team members to learn and grow confidently each day. I also want to believe in my next company's mission. It would be awesome to not only be confident in the way I fulfill my company's needs, but also to feel attached to the mission. I want to work on products that I believe in.",
+      "I plan on learning more and more constantly. In five years, I want to be five years better than I am today as a developer. In the short term, I want to learn as much about front-end JavaScript UI libraries as I possibly can. I am actively looking for a new challenge. A great, enriched company cultured is what I am really looking for from my next position. I am a huge believer in collaborative, deeply-meshed, nurturing culture that empowers team members to learn and grow confidently each day. I also want to believe in my next company's mission. It would be awesome to not only be confident in the way I fulfill my company's needs, but also to feel attached to the mission. I want to work on products that I believe in.",
       GiStairsGoal
     ),
     makeQA(
