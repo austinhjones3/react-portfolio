@@ -9,7 +9,8 @@ export default class RightSkills extends Component {
     return (
       <ul className="col-6 skills">
         <li>
-          <KnexIcon className="skill-logo" /> <span className="ml-2">Knex.js</span>
+          <KnexIcon className="skill-logo" />
+          <span className="ml-1">Knex.js</span>
         </li>
         <li>
           <FaHtml5 style={{ color: "#f56025" }} className="mr-2 skill-logo" />

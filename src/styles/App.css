@@ -38,7 +38,7 @@ body {
 .footer-container {
   position: relative;
   bottom: 0;
-  font-family: "Noto Sans", "Open Sans", monospace;
+  font-family: "Open Sans", monospace;
   text-align: center;
   margin-top: 20px;
 }

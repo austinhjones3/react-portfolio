@@ -10,7 +10,7 @@ export default function Footer() {
         }}
         className="footer-content"
       >
-        v0.15 &#169;2021 Austin Jones
+        v0.5 &#169;2021 Austin Jones
       </small>
     </div>
   );

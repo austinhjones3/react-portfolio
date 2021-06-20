@@ -1,13 +1,22 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { palette } from "../styles/palette";
 export default class Intro extends Component {
   render() {
     return (
       <div className="text-container">
         <span className="intro-text">
-          I am a Developer from New Orleans, LA specializing in the PostgreSQL,
-          Express.js, React.js, and Node.js (PERN) stack. While I am confident across
-          all facets of developing a web application, I really enjoy writing in
-          React.js.
+          I am a Full Stack Developer from New Orleans, LA specializing in the
+          PostgreSQL, Express.js, React.js, and Node.js (PERN) stack. I recently
+          graduated Thinkful's Engineering Immersion Bootcamp after completing a
+          full-stack application: a{" "}
+          <Link style={{ color: palette.hanBlue }} to="/projects#periodic-tables">
+            Restaurant Reservation System called Periodic Tables.
+          </Link>{" "}
+          While I am confident across all facets of developing a web application, I
+          really enjoy writing in React.js and working on the front-end in general. I
+          believe my talents, commitment to teamwork, personability, and work-ethic
+          would have an immediate positive impact on any engineering team.
         </span>
       </div>
     );

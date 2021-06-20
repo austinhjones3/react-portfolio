@@ -2,19 +2,16 @@ import React, { Component } from "react";
 import { palette } from "../styles/palette";
 import { ImDownload } from "react-icons/im";
 import "../styles/DownloadButton.css";
+import resume from "../images/austin-jones-resume.pdf";
 
 export default class DownloadResume extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { margin: props.margin };
-  }
   render() {
     return (
       <a
-        href="../images/austin-jones-resume.pdf"
-        className={`${this.state.margin} resume-link`}
+        href={resume}
+        className={`${this.props.margin} resume-link`}
         style={{ color: palette.cultured, textDecoration: "none" }}
-        download
+        download="austin-jones-resume.pdf"
       >
         <span className="row">
           <ImDownload id="dwnld-btn" style={{ fontSize: "32px" }} />{" "}

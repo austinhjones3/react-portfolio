@@ -1,0 +1,19 @@
+@import url("./palette.css");
+.project {
+  background-color: var(--space-cadet);
+  border: solid 1px var(--sky-blue-crayola);
+  color: var(--cultured);
+  font-family: "Raleway";
+}
+
+.card-link {
+  color: var(--opera-mauve);
+}
+.card-link:hover {
+  color: var(--cultured);
+}
+.card-link:active {
+  color: purple;
+}
+
+/*# sourceMappingURL=Projects.css.map */

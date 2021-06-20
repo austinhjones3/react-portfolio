@@ -3,7 +3,7 @@ import "../styles/About.css";
 import AboutPortrait from "../components/AboutPortrait";
 import Intro from "../components/Intro";
 import SectionAboutMe from "../components/SectionAboutMe";
-import { FaLaptopCode, FaTrophy } from "react-icons/fa";
+import { FaLaptopCode, FaTrophy, FaRegSnowflake } from "react-icons/fa";
 import { GiStairsGoal } from "react-icons/gi";
 
 export default function About() {
@@ -23,6 +23,11 @@ export default function About() {
       "What are my greatest accomplishments?",
       "As a Computer Science student at Southeastern Louisiana University, I was distinguished for my ability to grasp the material quickly and became a teaching assistant for my Java Algorithm Design and Implementation course. Years later, as a student in Thinkful's Engineering Immersion Program, I co-hosted a three-hour workshop on React.js and a particular project that a lot of my classmates were having trouble with. After a few days, it was clear that the workshop was a success. We received a ton of positive feedback about the session, and everyone soon passed the project and moved on to the next phase of the course. I learned a lot about myself from this. For one, I enjoy teaching. It is gratifying to help others and to know that you are impacting their life positively. And also, there is a lot to learn from teaching others. There is no better way to make sure you understand a concept than to try to teach it to someone else. I am definitely a believer in educating proactively and being receptive to education in return.",
       FaTrophy
+    ),
+    makeQA(
+      "What makes me unique?",
+      "Before committing to development, I worked a lot of different jobs that involved customer service. I served tables at a couple of restaurants for three years. After then, I moved on to the construction field where I worked as a warehouse helper. My job was to receive requests from different construction teams and fulfill them. I also worked as a supervisor to many different private security teams. This role was both client-facing and managerial, as I had to manage my employees on-shift and make sure the client was satisified. All of these roles involved a little something similar to each other: service. I have developed my service skills over the years to be a consumer-first oriented kind of worker. I have transated this well into my development career. I do not allow even the slightest unsatisfactory UI experiences to persist in my applications. If I know how to make the experience more intuitive, I do it. This commitment to the user helps me to become a better developer each day.",
+      FaRegSnowflake
     ),
   ];
   return (

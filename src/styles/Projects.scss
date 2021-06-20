@@ -1,0 +1,17 @@
+@import url("./palette.css");
+.project {
+  background-color: var(--space-cadet);
+  border: solid 1px var(--sky-blue-crayola);
+  color: var(--cultured);
+  font-family: "Raleway";
+}
+
+.card-link {
+  color: var(--opera-mauve);
+  &:hover {
+    color: var(--cultured);
+  }
+  &:active {
+    color: purple;
+  }
+}

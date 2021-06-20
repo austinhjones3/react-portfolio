@@ -1,7 +1,7 @@
 @import url("./palette.css");
 
 #about-header {
-  font-family: "Noto Sans";
+  font-family: "lucida console";
   margin-top: 10px;
   text-align: center;
   font-weight: 700;
@@ -30,13 +30,13 @@
 }
 
 .about-text {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "raleway";
   text-align: center;
 }
 
 .section-header {
-  font-family: "Noto Sans";
+  font-family: "Lucida Console";
   margin-top: 20px;
   text-align: center;
   font-weight: 700;
@@ -53,7 +53,7 @@
 
 @media only screen and (min-width: 992px) {
   .about-text {
-    font-size: 24px;
+    font-size: 20px;
     max-width: 800px;
   }
 }
