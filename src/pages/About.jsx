@@ -11,7 +11,7 @@ export default function About() {
   const questionsAndAnswers = [
     makeQA(
       "What am I doing?",
-      "I am currently deepening my knowledge of JavaScript and the libaries I've learned by reviewing my bootcamp's content and progressing through freeCodeCamp. Soon, I will start the design and unit test building phase of my next project: A Full-Stack Healthcare Management Application. I plan on building this application with TypeScript, React, and either Node/Express or ASP.NET Core/Azure. At this current moment, the user (a healthcare worker) will be able to manage and access a patient's information and appointments. A patient portal is a prospective addition later on.",
+      "I am currently deepening my knowledge of JavaScript and the libraries I've learned by reviewing my bootcamp's content and progressing through freeCodeCamp. Soon, I will start the design and unit test building phase of my next project: A Full-Stack Healthcare Management Application. I plan on building this application with TypeScript, React, and either Node/Express or ASP.NET Core/Azure. At this moment, the user (a healthcare worker) will be able to manage and access a patient's information and appointments. A patient portal is a prospective addition later on.",
       FaLaptopCode
     ),
     makeQA(
