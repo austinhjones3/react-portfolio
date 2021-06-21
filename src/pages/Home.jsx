@@ -14,8 +14,8 @@ export default function Home() {
         </div>
         <div align="center" className="mx-auto col-12">
           <p className="mt-3" id="home-pitch">
-            From building REST API's, to React Single Page Applications, or managing
-            a SQL database, I'm the person for the job.
+            From building REST APIs, to React Single Page Applications, or managing a
+            SQL database, I am the person for the job.
           </p>
         </div>
       </div>
