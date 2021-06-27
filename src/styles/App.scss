@@ -25,10 +25,10 @@
 body {
   background: rgb(2, 0, 36);
   background: linear-gradient(
-    90deg,
+    to top,
     rgba(2, 0, 36, 1) 0%,
-    rgba(53, 52, 84, 1) 50%,
-    rgba(53, 52, 84, 1) 100%
+    rgba(53, 52, 84, 1) 70%,
+    rgba(53, 52, 84, 1) 90%
   );
   color: #f0f0f0;
   font-family: "Open Sans";

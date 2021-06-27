@@ -73,7 +73,6 @@ export default function Header() {
           </Typist>
         )}
       </h1>
-
       <div className="d-flex justify-content-center">
         <Navbar sticky variant="light" className="text-center " expand="md">
           <Container className="d-flex justify-content-center">
