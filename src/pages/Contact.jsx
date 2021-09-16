@@ -71,7 +71,7 @@ export default function Contact() {
         {error ? (
           <ErrorAlert error={error} />
         ) : (
-          <h5>Fill out the form, or email me at austin@austinjones.io</h5>
+          <h5>Fill out the form, or email me at austinhjones3@gmail.com</h5>
         )}
         <form onSubmit={handleButtonClick} className="w-100" id="contact-form">
           <div className="mb-1">
