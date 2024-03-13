@@ -1,16 +1,16 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from "react";
-import "../styles/Contact.css";
+import "./Contact.css";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import useSideClick from "../util/useSideClick";
-import { MenuContext } from "../util/context";
+import { useSideClick } from "../hooks/useSideClick";
+import { MenuContext } from "../hooks/context";
 import { useForm } from "@formspree/react";
-import ErrorAlert from "../layout/ErrorAlert";
+import ErrorAlert from "../components/ErrorAlert";
 import { GiCheckMark } from "react-icons/gi";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { palette } from "../styles/palette";
-import DownloadResume from "../components/DownloadResume";
+import { palette } from "../util/palette";
+import { DownloadResume } from "../components/DownloadResume";
 
 export default function Contact() {
   const [state, sendResponse] = useForm("xleoyjpn");

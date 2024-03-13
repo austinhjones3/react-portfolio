@@ -4,8 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import Header from "./Header";
 import Routes from "./Routes";
 import Footer from "./Footer";
-import "../styles/Header.css";
-import { MenuContext } from "../util/context.js";
+import "./Header.css";
+import { MenuContext } from "../hooks/context.js";
 
 export default function Layout() {
   const [clickEvent, setClickEvent, clickEventRef] = useState(false);

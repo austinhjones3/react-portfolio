@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Home.css";
-import "../styles/Skills.css";
+import "./Home.css";
+import "../components/Skills.css";
 import Greeting from "../components/Greeting";
 import Skills from "../components/Skills";
 

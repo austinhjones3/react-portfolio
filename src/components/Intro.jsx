@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { palette } from "../styles/palette";
+import { palette } from "../util/palette";
 export default class Intro extends Component {
   render() {
     return (

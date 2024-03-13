@@ -1,11 +1,9 @@
-export default function useSideClick({
+export const useSideClick = ({
   clickEvent,
   setClickEvent,
   clickEventRef,
   setMenuIsOpen,
-}) {
-  return function () {
+}) => () => {
     setClickEvent(() => !clickEvent);
     setMenuIsOpen(() => clickEventRef);
   };
-}

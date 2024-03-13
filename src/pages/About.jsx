@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/About.css";
+import "./About.css";
 import AboutPortrait from "../components/AboutPortrait";
 import Intro from "../components/Intro";
 import SectionAboutMe from "../components/SectionAboutMe";

@@ -1,5 +1,5 @@
-import "./styles/App.css";
-import Layout from "./layout/Layout";
+import "./App.css";
+import Layout from "./components/Layout";
 
 export default function App() {
   return <Layout className="App" />;

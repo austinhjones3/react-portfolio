@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { palette } from "../styles/palette";
+import { palette } from "../util/palette";
 import { FaHtml5, FaGithub } from "react-icons/fa";
 import { SiCss3, SiSass } from "react-icons/si";
-import { KnexIcon } from "../images/SVG";
+import { KnexIcon } from "../img/SVG";
 
 export default class RightSkills extends Component {
   render() {

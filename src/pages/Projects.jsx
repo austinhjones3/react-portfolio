@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/Projects.css";
+import "./Projects.css";
 import SingleProject from "../components/SingleProject";
-import periodicTablesPic from "../images/periodic-tables-pic.png";
-import algoSpeedPic from "../images/algo-speed-pic.png";
-import weLoveMoviesPic from "../images/welovemovies-pic.png";
-import flashcardPic from "../images/flashcard-pic.png";
+import periodicTablesPic from "../img/periodic-tables-pic.png";
+import algoSpeedPic from "../img/algo-speed-pic.png";
+import weLoveMoviesPic from "../img/welovemovies-pic.png";
+import flashcardPic from "../img/flashcard-pic.png";
 
 export default function Projects() {
   const githubDefault = "https://github.com/austinhjones3/";

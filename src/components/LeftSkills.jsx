@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { palette } from "../styles/palette";
+import { palette } from "../util/palette";
 import { SiJavascript, SiPostgresql } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { ExpressIcon } from "../images/SVG";
+import { ExpressIcon } from "../img/SVG";
 
 export default class LeftSkills extends Component {
   render() {
@@ -26,7 +26,7 @@ export default class LeftSkills extends Component {
         </li>
         <li>
           <FaReact
-            style={{ color: palette.skyBlueCrayola }}
+            style={{ color: palette.dotnetPurple }}
             className="mr-2 skill-logo App-logo"
           />{" "}
           React.js

@@ -1,14 +1,19 @@
-@import url("./palette.css");
+@import url("../util/palette.css");
+
 #terminal-logo {
-  color: var(--sky-blue-crayola);
+  color: var(--dotnet-purple);
 }
 
 #header-title {
-  color: var(--opera-mauve);
+  color: var(--cultured);
   font-family: "Fira Mono", monospace;
   font-size: 50px;
   font-weight: 800;
-  -webkit-text-stroke: 0.7px var(--rich-black);
+  -webkit-text-stroke: 2px var(--ultra-violet);
+
+  @media only screen and (max-width: 992px) {
+    -webkit-text-stroke: 1px var(--ultra-violet);
+  }
 }
 
 .header-container {
@@ -18,16 +23,15 @@
 }
 
 #toggle-hamburger {
-  background-color: var(--sky-blue-crayola);
+  background-color: var(--dotnet-purple);
 }
-
-.link-icon {
-  color: var(--han-blue);
-}
-
 .header-link {
   font-size: 16px;
   font-family: "Fira Mono", monospace;
+  color: var(--cultured);
+}
+.link-icon {
+  color: var(--dotnet-purple);
 }
 
 @media only screen and (max-width: 992px) {
@@ -35,10 +39,9 @@
     font-size: 30px;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .header-link {
     font-size: 24px;
   }
 }
-
-/*# sourceMappingURL=Header.css.map */

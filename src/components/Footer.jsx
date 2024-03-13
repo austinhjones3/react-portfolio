@@ -1,5 +1,5 @@
 import React from "react";
-import { palette } from "../styles/palette";
+import { palette } from "../util/palette";
 
 export default function Footer() {
   return (

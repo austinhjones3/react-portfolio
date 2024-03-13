@@ -1,7 +1,7 @@
-@import url("./palette.css");
+@import url("../util/palette.css");
 #dwnld-btn {
   margin-left: 25%;
-  color: var(--opera-mauve);
+  color: var(--cultured);
 }
 
 /*# sourceMappingURL=DownloadButton.css.map */

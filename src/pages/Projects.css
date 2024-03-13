@@ -1,26 +1,26 @@
-@import url("./palette.css");
+@import url("../util/palette.css");
 .project {
   background-color: var(--space-cadet);
-  border: solid 1px var(--sky-blue-crayola);
+  border: solid 1px var(--dotnet-purple);
   color: var(--cultured);
   font-family: "Raleway";
   max-width: 650px;
 }
 
 .card-link {
-  color: var(--opera-mauve);
+  color: var(--ultra-violet);
 }
 .card-link:hover {
   color: var(--cultured);
 }
 .card-link:active {
-  color: purple;
+  color: var(--ultra-violet);
 }
 
 @media only screen and (min-width: 992px) {
   .card-body,
-.card-title,
-.list-group-item {
+  .card-title,
+  .list-group-item {
     font-size: 1.2em;
   }
 }

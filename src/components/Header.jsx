@@ -2,8 +2,8 @@
 import React, { useEffect, useContext, useRef, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { palette } from "../styles/palette";
-import "../styles/Header.css";
+import { palette } from "../util/palette";
+import "./Header.css";
 import { FaTerminal } from "react-icons/fa";
 import {
   BsHouseDoorFill,
@@ -11,8 +11,8 @@ import {
   BsTerminalFill,
   BsFillPersonLinesFill,
 } from "react-icons/bs";
-import { MenuContext } from "../util/context";
-import useSideClick from "../util/useSideClick";
+import { MenuContext } from "../hooks/context";
+import { useSideClick } from "../hooks/useSideClick";
 import $ from "jquery";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
@@ -33,7 +33,7 @@ export default function Header() {
   }
 
   const linkStyle = {
-    color: palette.skyBlueCrayola,
+    color: palette.ultraViolet,
   };
 
   const newPhrase = (text, delay) => ({ text, delay });
@@ -41,15 +41,14 @@ export default function Header() {
   // phrases and their delays before backspace to be typed in header
   const phrases = [
     newPhrase("Austin Jones", 4000),
-    newPhrase("Developer", 4000),
-    newPhrase("Programmer", 2500),
-    newPhrase("React Buff", 2500),
-    newPhrase("Techie", 1200),
+    newPhrase("Web API Engineer", 4000),
+    newPhrase(".NET Developer", 2500),
+    newPhrase("React Developer", 2500),
+    newPhrase("Microservices Expert", 1500),
+    newPhrase("Test Automation Pro", 1500),
+    newPhrase("Techie", 500),
     newPhrase("Father", 500),
-    newPhrase("Teacher", 500),
-    newPhrase("Learner", 500),
     newPhrase("Gamer", 500),
-    newPhrase("Friend", 500),
   ];
 
   // when the phrases are finished mapping, change state to rerender and loop
@@ -92,7 +91,7 @@ export default function Header() {
                   to="/"
                   className="header-link"
                 >
-                  <BsHouseDoorFill className="link-icon" /> =&gt; Home
+                  <BsHouseDoorFill className="link-icon" /> Home
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
@@ -101,7 +100,7 @@ export default function Header() {
                   to="/about"
                   className="header-link"
                 >
-                  <BsFillPersonLinesFill className="link-icon" /> =&gt; About
+                  <BsFillPersonLinesFill className="link-icon" /> About
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
@@ -110,7 +109,7 @@ export default function Header() {
                   to="/projects"
                   className="header-link"
                 >
-                  <BsTerminalFill className="link-icon" /> =&gt; Projects
+                  <BsTerminalFill className="link-icon" /> Projects
                 </Nav.Link>
 
                 <Nav.Link
@@ -120,7 +119,7 @@ export default function Header() {
                   to="/contact"
                   className="header-link"
                 >
-                  <BsFillEnvelopeFill className="link-icon" /> =&gt; Contact
+                  <BsFillEnvelopeFill className="link-icon" /> Contact
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

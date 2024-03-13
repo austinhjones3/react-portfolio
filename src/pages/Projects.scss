@@ -1,19 +1,19 @@
-@import url("./palette.css");
+@import url("../util/palette.css");
 .project {
   background-color: var(--space-cadet);
-  border: solid 1px var(--sky-blue-crayola);
+  border: solid 1px var(--dotnet-purple);
   color: var(--cultured);
   font-family: "Raleway";
   max-width: 650px;
 }
 
 .card-link {
-  color: var(--opera-mauve);
+  color: var(--ultra-violet);
   &:hover {
     color: var(--cultured);
   }
   &:active {
-    color: purple;
+    color: var(--ultra-violet);
   }
 }
 

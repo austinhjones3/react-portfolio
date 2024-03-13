@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import portrait from "../images/austin-portrait.jpg";
-import DownloadResume from "./DownloadResume";
+import portrait from "../img/austin-portrait.jpg";
+import { DownloadResume } from "./DownloadResume";
 export default class AboutPortrait extends Component {
   render() {
     return (
