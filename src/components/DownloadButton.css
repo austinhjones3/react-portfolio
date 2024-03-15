@@ -4,4 +4,11 @@
   color: var(--cultured);
 }
 
+.resume-link .resume-link-text:active {
+  color: var(--ultra-violet);
+}
+.resume-link .resume-link-text:hover {
+  color: var(--cultured);
+}
+
 /*# sourceMappingURL=DownloadButton.css.map */

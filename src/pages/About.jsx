@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.css";
-import AboutPortrait from "../components/AboutPortrait";
-import Intro from "../components/Intro";
-import SectionAboutMe from "../components/SectionAboutMe";
+import { AboutPortrait } from "../components/AboutPortrait";
+import { Intro } from "../components/Intro";
+import { SectionAboutMe } from "../components/SectionAboutMe";
 import { FaLaptopCode, FaTrophy, FaRegSnowflake } from "react-icons/fa";
 import { GiStairsGoal } from "react-icons/gi";
 
-export default function About() {
+export const About = () => {
   const makeQA = (question, answer, icon) => ({ question, answer, icon });
   const questionsAndAnswers = [
     makeQA(

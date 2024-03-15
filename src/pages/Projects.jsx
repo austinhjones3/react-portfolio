@@ -1,12 +1,12 @@
 import React from "react";
 import "./Projects.css";
-import SingleProject from "../components/SingleProject";
+import { SingleProject } from "../components/SingleProject";
 import periodicTablesPic from "../img/periodic-tables-pic.png";
 import algoSpeedPic from "../img/algo-speed-pic.png";
 import weLoveMoviesPic from "../img/welovemovies-pic.png";
 import flashcardPic from "../img/flashcard-pic.png";
 
-export default function Projects() {
+export const Projects = () => {
   const githubDefault = "https://github.com/austinhjones3/";
   const makeProject = (id, img, name, desc, tech, date, repo, prod) => ({
     id,

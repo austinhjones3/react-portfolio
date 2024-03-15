@@ -1,13 +1,13 @@
 import React from "react";
 import useState from "react-usestateref";
 import { BrowserRouter } from "react-router-dom";
-import Header from "./Header";
-import Routes from "./Routes";
-import Footer from "./Footer";
+import { Header } from "./Header";
+import { Routes } from "./Routes";
+import { Footer } from "./Footer";
 import "./Header.css";
 import { MenuContext } from "../hooks/context.js";
 
-export default function Layout() {
+export const Layout = () => {
   const [clickEvent, setClickEvent, clickEventRef] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const context = {

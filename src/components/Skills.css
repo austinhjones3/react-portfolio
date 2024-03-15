@@ -6,11 +6,6 @@
   color: var(--cultured);
   -webkit-text-stroke: 0.5px var(--ultra-violet);
 }
-@media only screen and (max-width: 992px) {
-  .skills-header {
-    -webkit-text-stroke: 0.35px var(--ultra-violet);
-  }
-}
 
 .skills-container {
   max-width: 500px;

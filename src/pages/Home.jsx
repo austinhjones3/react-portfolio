@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css";
 import "../components/Skills.css";
-import Greeting from "../components/Greeting";
-import Skills from "../components/Skills";
+import { Greeting } from "../components/Greeting";
+import { Skills } from "../components/Skills";
 
-export default function Home() {
+export const Home = () => {
   return (
     <>
       <Greeting />

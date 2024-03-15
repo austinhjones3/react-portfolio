@@ -6,13 +6,13 @@ import { useHistory } from "react-router-dom";
 import { useSideClick } from "../hooks/useSideClick";
 import { MenuContext } from "../hooks/context";
 import { useForm } from "@formspree/react";
-import ErrorAlert from "../components/ErrorAlert";
+import { ErrorAlert } from "../components/ErrorAlert";
 import { GiCheckMark } from "react-icons/gi";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { palette } from "../util/palette";
 import { DownloadResume } from "../components/DownloadResume";
 
-export default function Contact() {
+export const Contact = () => {
   const [state, sendResponse] = useForm("xleoyjpn");
   const [error, setError] = useState(null);
   const history = useHistory();
@@ -53,14 +53,14 @@ export default function Contact() {
         </h3>
         <div className="mt-3 mb-2 row d-flex justify-content-center">
           <Link
-            to={{ pathname: "https://linkedin.com/in/austinhjones3/" }}
+            to={{ pathname: "https://linkedin.com/in/austinjonesdev/" }}
             target="_blank"
             className="mr-3"
           >
             <FaLinkedin style={{ fontSize: "50px", color: palette.hanBlue }} />
           </Link>
           <Link
-            to={{ pathname: "https://github.com/austinhjones3" }}
+            to={{ pathname: "https://github.com/austinjones31" }}
             target="_blank"
             className="mr-3"
           >

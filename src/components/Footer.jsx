@@ -1,7 +1,7 @@
 import React from "react";
 import { palette } from "../util/palette";
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <div className="footer-container">
       <small

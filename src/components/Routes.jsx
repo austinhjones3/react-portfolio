@@ -1,10 +1,11 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Contact from "../pages/Contact";
-import Projects from "../pages/Projects";
-import About from "../pages/About";
-import Home from "../pages/Home";
-export default function Routes() {
+import { Contact } from "../pages/Contact";
+import { Projects } from "../pages/Projects";
+import { About } from "../pages/About";
+import { Home } from "../pages/Home";
+
+export const Routes = () => {
   return (
     <main>
       <Switch>

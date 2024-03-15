@@ -17,7 +17,7 @@ import $ from "jquery";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 
-export default function Header() {
+export const Header = () => {
   const context = useContext(MenuContext);
   const handleSideClick = useSideClick(context);
   const toggleHamburger = useRef();
@@ -44,8 +44,8 @@ export default function Header() {
     newPhrase("Web API Engineer", 4000),
     newPhrase(".NET Developer", 2500),
     newPhrase("React Developer", 2500),
-    newPhrase("Microservices Expert", 1500),
-    newPhrase("Test Automation Pro", 1500),
+    newPhrase("Automated Tester", 1500),
+    newPhrase("Scrum Master", 1500),
     newPhrase("Techie", 500),
     newPhrase("Father", 500),
     newPhrase("Gamer", 500),
