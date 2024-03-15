@@ -3,7 +3,7 @@ import React, { useEffect, useContext, useRef, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { palette } from "../util/palette";
-import "./Header.css";
+import "./Header.scss";
 import { FaTerminal } from "react-icons/fa";
 import {
   BsHouseDoorFill,

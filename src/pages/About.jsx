@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./About.scss";
 import { AboutPortrait } from "../components/AboutPortrait";
 import { Intro } from "../components/Intro";
 import { SectionAboutMe } from "../components/SectionAboutMe";

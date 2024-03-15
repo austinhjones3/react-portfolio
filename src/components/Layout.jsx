@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Header } from "./Header";
 import { Routes } from "./Routes";
 import { Footer } from "./Footer";
-import "./Header.css";
+import "./Header.scss";
 import { MenuContext } from "../hooks/context.js";
 
 export const Layout = () => {

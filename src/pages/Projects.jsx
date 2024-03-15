@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css";
+import "./Projects.scss";
 import { SingleProject } from "../components/SingleProject";
 import periodicTablesPic from "../img/periodic-tables-pic.png";
 import algoSpeedPic from "../img/algo-speed-pic.png";

@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from "react";
-import "./Contact.css";
+import "./Contact.scss";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import { useSideClick } from "../hooks/useSideClick";
@@ -26,7 +26,7 @@ export const Contact = () => {
         history.push("/");
       }, 3500);
       return () => clearTimeout(timer);
-    } else if (state.errors.length) {
+    } else if (state.errors) {
       setError(() => new Error(state.errors[0].message));
     }
   }

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Home.css";
-import "../components/Skills.css";
+import "./Home.scss";
+import "../components/Skills.scss";
 import { Greeting } from "../components/Greeting";
 import { Skills } from "../components/Skills";
 

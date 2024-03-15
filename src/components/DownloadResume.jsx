@@ -1,7 +1,7 @@
 import React from "react";
 import { palette } from "../util/palette";
 import { ImDownload } from "react-icons/im";
-import "./DownloadButton.css";
+import "./DownloadButton.scss";
 import resume from "../img/01-Austin-Jones-Resume.pdf";
 
 export const DownloadResume = (props) => (
