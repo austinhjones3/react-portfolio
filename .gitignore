@@ -22,5 +22,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# don't commit compiled css, only scss
-*.css
+# scss
+/.sass-cache*
+# don't commit compile css files or mappers
+*.css*
+# allow only this css file
+!/src/util/palette.css
+
+# package-lock
+/package-lock.json
+

@@ -41,14 +41,15 @@ export const Header = () => {
   // phrases and their delays before backspace to be typed in header
   const phrases = [
     newPhrase("Austin Jones", 4000),
-    newPhrase("Web API Engineer", 4000),
-    newPhrase(".NET Developer", 2500),
-    newPhrase("React Developer", 2500),
-    newPhrase("Automated Tester", 1500),
-    newPhrase("Scrum Master", 1500),
+    newPhrase("Full Stack Dev", 3000),
+    newPhrase("Web API Engineer", 2000),
+    newPhrase(".NET Engineer", 2000),
+    newPhrase("React Engineer", 2000),
+    newPhrase("Automated Tester", 1000),
+    newPhrase("Scrum Master", 1000),
     newPhrase("Techie", 500),
     newPhrase("Father", 500),
-    newPhrase("Gamer", 500),
+    newPhrase("Gamer", 500)
   ];
 
   // when the phrases are finished mapping, change state to rerender and loop

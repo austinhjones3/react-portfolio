@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 export const Greeting = () => {
   return (
@@ -6,7 +6,7 @@ export const Greeting = () => {
       <div className="col-1 col-md-3"> </div>
       <div className="col-10 col-md-6">
         <h3 className="mt-3" id="home-greeting" align="center">
-          Greetings from the Code Offices of Austin Henry Jones!
+          Hey! Thanks for checking out my portfolio.
           <br />
         </h3>
       </div>
