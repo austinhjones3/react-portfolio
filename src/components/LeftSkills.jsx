@@ -1,38 +1,30 @@
 import React from "react";
+import { SiDotnet, SiGoland, SiJavascript, SiOpenai } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
 import { palette } from "../util/palette";
-import { SiJavascript, SiPostgresql } from "react-icons/si";
-import { FaReact, FaNodeJs } from "react-icons/fa";
-import { ExpressIcon } from "../img/SVG";
 
 export const LeftSkills = () => {
   return (
     <ul className="col-6 skills">
       <li>
-        <SiJavascript style={{ color: "#f7df1e" }} className="mr-2 skill-logo" />{" "}
-        JavaScript
+        <SiDotnet style={{color: palette.ultraViolet}} className="mr-2 skill-logo"/>
+        <span className="ml-1">C#|.NET</span>
       </li>
       <li>
-        <SiPostgresql style={{ color: "#73a7c9" }} className="mr-2 skill-logo" />{" "}
-        PostgreSQL
+        <SiGoland style={{color: "#01aeda"}} className="mr-2 skill-logo"/>
+        <span className="ml-1">Golang</span>
       </li>
       <li>
-        <ExpressIcon
-          className="skill-logo"
-          stroke={palette.cultured}
-          fill={palette.cultured}
-        />
-        <span className="ml-2">Express.js</span>
+        <SiJavascript style={{color: "#f7df1e"}} className="mr-2 skill-logo"/>
+        <span className="ml-1">JavaScript</span>
       </li>
       <li>
-        <FaReact
-          style={{ color: palette.dotnetPurple }}
-          className="mr-2 skill-logo App-logo"
-        />{" "}
-        React.js
+        <FaJava style={{color: "aquamarine"}} className="mr-2 skill-logo"/>
+        <span className="ml-1">Java|Spring</span>
       </li>
       <li>
-        <FaNodeJs style={{ color: "#7bd474" }} className="mr-2 skill-logo" />{" "}
-        Node.js
+        <SiOpenai style={{color: palette.cultured}} className="mr-2 skill-logo"/>
+        <span className="ml-1">AI Prompting</span>
       </li>
     </ul>
   );

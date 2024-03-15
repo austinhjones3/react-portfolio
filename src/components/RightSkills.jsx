@@ -1,33 +1,37 @@
 import React from "react";
 import { palette } from "../util/palette";
-import { FaHtml5, FaGithub } from "react-icons/fa";
-import { SiCss3, SiSass } from "react-icons/si";
-import { KnexIcon } from "../img/SVG";
+import { FaNodeJs, FaReact, FaTerminal } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
+import { FaAngular } from "react-icons/fa6";
 
 export const RightSkills = () => {
   return (
     <ul className="col-6 skills">
       <li>
-        <KnexIcon className="skill-logo" />
-        <span className="ml-1">Knex.js</span>
+        <SiPostgresql style={{color: "#73a7c9"}} className="mr-2 skill-logo"/>
+        <span className="ml-1">SQL</span>
       </li>
       <li>
-        <FaHtml5 style={{ color: "#f56025" }} className="mr-2 skill-logo" />
-        HTML5
+        <FaReact
+          style={{color: "#159fca"}}
+          className="mr-2 skill-logo App-logo"
+        />
+        <span className="ml-1">React</span>
       </li>
       <li>
-        <SiCss3 style={{ color: "#2c99f2" }} className="mr-2 skill-logo" /> CSS3
+        <FaAngular style={{color: "orange"}} className="mr-2 skill-logo"/>
+        <span className="ml-1">Angular</span>
       </li>
       <li>
-        <SiSass style={{ color: "#cc6699" }} className="mr-2 skill-logo" />
-        SASS
+        <FaNodeJs style={{color: "#7bd474"}} className="mr-2 skill-logo"/>
+        <span className="ml-1">Node</span>
       </li>
       <li>
-        <FaGithub
-          style={{ color: palette.cultured }}
+        <FaTerminal
+          style={{color: palette.cultured}}
           className="mr-2 skill-logo"
-        />{" "}
-        Git/GitHub
+        />
+        <span className="ml-1">Pwsh|Bash</span>
       </li>
     </ul>
   );
